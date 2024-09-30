@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>利用-webkit-filter: invert(100%) 实现网页深色模式</title>
+  <style>
+    body {
+      background-color: #ffffff;
+    }
+    .content {
+      background-color: #f6f7fb;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 500px;
+      height: 500px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .img {
+      width: 300px;
+      height: 200px;
+      background-size: 100% 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      /*使用背景图片方式，深色模式可反转图片，直接使用img标签不会*/
+      background-image: url(https://pic.chaopx.com/chao_origin_pic/20/24/04/e4745862a8aaecc28c54d1725c2a8a35.png);
+    }
+    button {
+      margin-top: 24px;
+      height: 50px;
+      width: 300px;
+      background-color: #3177ff;
+      color: #ffffff;
+      cursor: pointer;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <div class="img"></div>
+    <button onclick="switchDarkStyle('light')">浅色模式</button>
+    <button onclick="switchDarkStyle('dark')">深色模式</button>
+  </div>
+  <script src="./darkMode.js"></script>
+</body>
+</html>
