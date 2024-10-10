@@ -1,6 +1,9 @@
 # darkMode
 纯css3实现网页深色模式：-webkit-filter: invert(100%) 
 
+## Reference
+Google Chrome plugin:  [Dark Mode for Chrome](https://chromewebstore.google.com/detail/dark-mode-for-chrome/iefadjgldnnpdadmphmaapklchpjhcnj)
+
 ## Demo
 You can test on: https://237005722.github.io/darkMode/
 
